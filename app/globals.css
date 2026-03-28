@@ -9,7 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-heading);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -51,7 +51,7 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.985 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -60,18 +60,18 @@
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(0.398 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --ring: oklch(0.87 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -80,17 +80,22 @@
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: oklch(0.87 0 0);
+
+  /* Default Accents */
+  --t-shadow: 99, 102, 241;
+  --t-glow: rgba(99, 102, 241, 0.08);
+  --t-glow-strong: rgba(99, 102, 241, 0.3);
 }
 
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: oklch(0.985 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -98,23 +103,96 @@
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.899);
+  --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* ═══════════════ ACCENT THEME REMAPPING ═══════════════ */
+/* We redefine Tailwind's internal color variables to switch accents globally */
+
+/* Theme: Emerald-Teal */
+[data-accent="emerald"] {
+  --color-indigo-400: #34d399;
+  --color-indigo-500: #10b981;
+  --color-indigo-600: #059669;
+  --color-cyan-400: #2dd4bf;
+  --color-cyan-500: #14b8a6;
+  --color-blue-500: #10b981;
+  --color-blue-600: #059669;
+
+  --t-shadow: 16, 185, 129;
+  --t-glow: rgba(16, 185, 129, 0.08);
+  --t-glow-strong: rgba(16, 185, 129, 0.3);
+  --selection-bg: rgba(16, 185, 129, 0.3);
+}
+
+/* Theme: Violet-Fuchsia */
+[data-accent="violet"] {
+  --color-indigo-400: #a78bfa;
+  --color-indigo-500: #8b5cf6;
+  --color-indigo-600: #7c3aed;
+  --color-cyan-400: #e879f9;
+  --color-cyan-500: #d946ef;
+  --color-blue-500: #8b5cf6;
+  --color-blue-600: #7c3aed;
+
+  --t-shadow: 139, 92, 246;
+  --t-glow: rgba(139, 92, 246, 0.08);
+  --t-glow-strong: rgba(139, 92, 246, 0.3);
+  --selection-bg: rgba(139, 92, 246, 0.3);
+}
+
+/* Theme: Rose-Amber */
+[data-accent="rose"] {
+  --color-indigo-400: #fb7185;
+  --color-indigo-500: #f43f5e;
+  --color-indigo-600: #e11d48;
+  --color-cyan-400: #fbbf24;
+  --color-cyan-500: #f59e0b;
+  --color-blue-500: #f43f5e;
+  --color-blue-600: #e11d48;
+
+  --t-shadow: 244, 63, 94;
+  --t-glow: rgba(244, 63, 94, 0.08);
+  --t-glow-strong: rgba(244, 63, 94, 0.3);
+  --selection-bg: rgba(244, 63, 94, 0.3);
+}
+
+/* Theme: Sky-Blue */
+[data-accent="sky"] {
+  --color-indigo-400: #38bdf8;
+  --color-indigo-500: #0ea5e9;
+  --color-indigo-600: #0284c7;
+  --color-cyan-400: #a5f3fc;
+  --color-cyan-500: #67e8f9;
+  --color-blue-500: #0ea5e9;
+  --color-blue-600: #0284c7;
+
+  --t-shadow: 14, 165, 233;
+  --t-glow: rgba(14, 165, 233, 0.08);
+  --t-glow-strong: rgba(14, 165, 233, 0.3);
+  --selection-bg: rgba(14, 165, 233, 0.3);
+}
+
+/* Selection Override */
+::selection {
+  background: var(--selection-bg, rgba(99, 102, 241, 0.3));
+  color: #fff;
 }
 
 @layer base {
@@ -122,9 +200,39 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    @apply font-heading;
   }
 }
+
+/* Scrollbar Removal */
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+html, body {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  overflow-x: hidden;
+}
+
+/* ───────── Dynamic Accent Variables for JS ───────── */
+:root {
+  --t-500: var(--color-indigo-500, #6366f1);
+}
+[data-accent="emerald"] { --t-500: #10b981; }
+[data-accent="violet"] { --t-500: #8b5cf6; }
+[data-accent="rose"] { --t-500: #f43f5e; }
+[data-accent="sky"] { --t-500: #0ea5e9; }
