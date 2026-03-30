@@ -67,12 +67,12 @@ export default function Navbar() {
     if (!mounted) return null;
 
     return (
-        <nav className="fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-6 md:py-5">
+        <nav className="fixed left-0 right-0 top-0 z-50 px-4 py-3 md:px-6 md:py-4">
             <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "circOut" }}
-                className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2.5 backdrop-blur-2xl transition-all duration-500 ${scrolled
+                className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2 backdrop-blur-2xl transition-all duration-500 ${scrolled
                         ? "border-indigo-500/20 bg-background/80 shadow-2xl shadow-indigo-500/10"
                         : "border-border bg-background/40"
                     }`}

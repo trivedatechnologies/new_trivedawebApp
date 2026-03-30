@@ -162,10 +162,10 @@ export default function Team() {
     return (
         <section
             id="team"
-            className="relative z-10 border-t border-border bg-background py-20 md:py-32"
+            className="relative z-10 border-t border-border bg-background py-12 md:py-16"
         >
             <div className="mx-auto max-w-6xl px-4 md:px-6 mb-12">
-                <div className="flex flex-col mb-10">
+                <div className="flex flex-col mb-6">
                     <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground tracking-tighter">
                         <TextReveal text="Creative" />{" "}
                         <TextReveal text="Engineers" gradient />
@@ -179,7 +179,7 @@ export default function Team() {
 
             <ImageTrail trailDistance={140} />
 
-            <div className="mt-16 text-center">
+            <div className="mt-10 text-center">
                 <p className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground opacity-50">
                     MOVE YOUR CURSOR TO DISCOVER
                 </p>

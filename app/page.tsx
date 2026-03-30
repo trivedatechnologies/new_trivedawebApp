@@ -32,7 +32,7 @@ export default function Home() {
                     <TrustStrip />
                     <About />
                     <Services />
-                    <VelocityScroll />
+                    {/* <VelocityScroll /> */}
                     <Advantages />
                     <Stats />
                     <Industries />

@@ -26,7 +26,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative z-50 mt-auto rounded-t-[2.5rem] md:rounded-t-[4rem] border-t border-border bg-card/50 backdrop-blur-3xl pb-10 pt-20 text-muted-foreground shadow-[0_-20px_80px_rgba(0,0,0,0.05)] dark:shadow-none">
+        <footer className="relative z-50 mt-auto rounded-t-[2.5rem] md:rounded-t-[4rem] border-t border-border bg-card/50 backdrop-blur-3xl pb-8 pt-12 text-muted-foreground shadow-[0_-20px_80px_rgba(0,0,0,0.05)] dark:shadow-none">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
                 <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
                     {/* Brand */}

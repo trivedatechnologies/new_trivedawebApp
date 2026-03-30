@@ -115,7 +115,7 @@ export default function Hero() {
             <main className="relative z-10 min-h-screen w-full flex items-center justify-center p-4 md:p-12 font-sans text-foreground">
                 <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
                     {/* Hero Text Section */}
-                    <div className="md:col-span-7 flex flex-col justify-center space-y-3 md:space-y-4 lg:space-y-6 pt-40 md:pt-24">
+                    <div className="md:col-span-7 flex flex-col justify-center space-y-2 md:space-y-3 lg:space-y-4 pt-32 md:pt-20">
                         {/* Badge */}
 
 
@@ -124,12 +124,12 @@ export default function Hero() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
-                            className="text-4xl sm:text-6xl md:text-8xl font-black font-heading tracking-tighter leading-tight md:leading-none overflow-visible"
+                            className="text-3xl sm:text-5xl md:text-6xl font-black font-heading tracking-tighter leading-tight md:leading-none overflow-visible"
                         >
                             <motion.span
                                 whileHover={{ scale: 1.02, x: 5 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className="inline-block text-foreground cursor-default py-1"
+                                className="inline-block text-foreground cursor-default py-0.5"
                             >
                                 Build Scalable
                             </motion.span>
@@ -137,7 +137,7 @@ export default function Hero() {
                             <motion.span
                                 whileHover={{ scale: 1.02, x: 5 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className="inline-block text-foreground cursor-default py-1"
+                                className="inline-block text-foreground cursor-default py-0.5"
                             >
                                 Digital & AI
                             </motion.span>
@@ -145,7 +145,7 @@ export default function Hero() {
                             <motion.span
                                 whileHover={{ scale: 1.02, x: 5 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                className="inline-block bg-linear-to-r from-indigo-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent text-5xl sm:text-7xl md:text-[6.5rem] cursor-default py-2 font-black leading-[1.1]"
+                                className="inline-block bg-linear-to-r from-indigo-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent text-4xl sm:text-6xl md:text-7xl cursor-default py-1.5 font-black leading-[1.1]"
                             >
                                 Solutions for Modern Businesses
                             </motion.span>
@@ -166,7 +166,7 @@ export default function Hero() {
                             initial={{ y: 30, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4"
+                            className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-1 md:pt-2"
                         >
                             <button
                                 onClick={() =>

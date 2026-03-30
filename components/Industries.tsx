@@ -168,7 +168,7 @@ function DesktopIndustries() {
         <section
             id="industries"
             ref={containerRef}
-            className="relative z-10 h-[160vh] bg-background py-24"
+            className="relative z-10 h-[150vh] bg-background py-12"
         >
             <motion.div
                 style={{ opacity: sectionOpacity }}
@@ -244,7 +244,7 @@ function MobileIndustries() {
     return (
         <section
             id="industries"
-            className="relative z-10 bg-background px-4 py-16 md:py-24"
+            className="relative z-10 bg-background px-4 py-12 md:py-16"
         >
             <div className="mx-auto max-w-6xl">
                 <IndustriesHeader />
@@ -275,7 +275,7 @@ export default function Industries() {
     // Before mount (SSR / hydration), render a simple placeholder that matches both
     if (isDesktop === null) {
         return (
-            <section id="industries" className="relative z-10 bg-background px-4 py-16 md:py-24">
+            <section id="industries" className="relative z-10 bg-background px-4 py-12 md:py-16">
                 <div className="mx-auto max-w-6xl">
                     <IndustriesHeader />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

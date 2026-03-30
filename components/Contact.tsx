@@ -29,7 +29,7 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="relative z-10 overflow-hidden bg-background px-4 py-28 md:px-6 md:py-36 border-t border-border"
+            className="relative z-10 overflow-hidden bg-background px-4 py-16 md:px-6 md:py-20 border-t border-border"
         >
             {/* Background */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_100%,rgba(99,102,241,0.08),transparent)]" />
@@ -38,7 +38,7 @@ export default function Contact() {
                 {/* CTA Banner */}
                 <ScaleOnScroll>
                     <motion.div
-                        className="mb-20 overflow-hidden rounded-3xl border border-indigo-500/20 bg-linear-to-br from-indigo-600/10 via-card to-blue-600/5 p-10 md:p-16 text-center backdrop-blur-xl"
+                        className="mb-10 overflow-hidden rounded-3xl border border-indigo-500/20 bg-linear-to-br from-indigo-600/10 via-card to-blue-600/5 p-10 md:p-14 text-center backdrop-blur-xl"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground mb-5 tracking-tighter">
                             <TextReveal text="Let’s Build Something" />{" "}
@@ -175,7 +175,7 @@ export default function Contact() {
                 </div>
             </div>
             
-            <div className="mt-28">
+            <div className="mt-16">
                 <SectionDivider />
             </div>
         </section>

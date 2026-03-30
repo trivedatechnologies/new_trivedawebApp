@@ -42,11 +42,11 @@ export default function About() {
     return (
         <section
             id="about"
-            className="relative z-10 bg-background px-4 py-28 md:px-6 md:py-36"
+            className="relative z-10 bg-background px-4 py-16 md:px-6 md:py-20"
         >
             <div className="mx-auto max-w-6xl">
                 {/* Section Header */}
-                <div className="mb-20 text-center">
+                <div className="mb-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export default function About() {
                 </StaggerContainer>
             </div>
 
-            <div className="mt-28">
+            <div className="mt-16">
                 <SectionDivider />
             </div>
         </section>

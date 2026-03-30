@@ -64,7 +64,7 @@ export default function Stats() {
     return (
         <section
             id="stats"
-            className="relative z-10 overflow-hidden bg-background px-4 py-20 md:py-28 border-t border-border"
+            className="relative z-10 overflow-hidden bg-background px-4 py-12 md:py-16 border-t border-border"
         >
             {/* Background effect */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_50%,rgba(99,102,241,0.08),transparent)]" />
