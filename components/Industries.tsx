@@ -19,7 +19,7 @@ const INDUSTRIES = [
         icon: Landmark,
         title: "Financial Services",
         description: "Modernizing banking, risk analytics, and fintech ecosystems with secure, scalable digital infrastructure.",
-        color: "text-indigo-400",
+        color: "text-indigo-500",
         bg: "bg-indigo-500/10",
         image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80",
         tags: ["Fintech", "Security", "Analytics"],
@@ -29,8 +29,8 @@ const INDUSTRIES = [
         icon: ShoppingCart,
         title: "Retail & E-commerce",
         description: "Transforming omnichannel retail with intelligent inventory management and personalized consumer experiences.",
-        color: "text-cyan-400",
-        bg: "bg-cyan-500/10",
+        color: "text-indigo-500",
+        bg: "bg-indigo-500/10",
         image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
         tags: ["D2C", "Inventory", "Omnichannel"],
     },
@@ -39,8 +39,8 @@ const INDUSTRIES = [
         icon: HeartPulse,
         title: "Healthcare & Life Sciences",
         description: "Engineering secure EHR systems, telemedicine platforms, and AI-driven diagnostic tools for modern medicine.",
-        color: "text-blue-400",
-        bg: "bg-blue-500/10",
+        color: "text-indigo-500",
+        bg: "bg-indigo-500/10",
         image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&q=80",
         tags: ["HIPAA", "EHR", "Telehealth"],
     },
@@ -49,7 +49,7 @@ const INDUSTRIES = [
         icon: GraduationCap,
         title: "Education & EdTech",
         description: "Reimagining learning with adaptive LMS platforms, interactive portals, and seamless institutional management.",
-        color: "text-indigo-400",
+        color: "text-indigo-500",
         bg: "bg-indigo-500/10",
         image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
         tags: ["LMS", "Adaptive", "Engagement"],
@@ -59,9 +59,9 @@ const INDUSTRIES = [
         icon: Factory,
         title: "Manufacturing & Logistics",
         description: "Optimizing supply chains and industrial workflows through IoT integration and real-time operational intelligence.",
-        color: "text-cyan-400",
-        bg: "bg-cyan-500/10",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+        color: "text-indigo-500",
+        bg: "bg-indigo-500/10",
+        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
         tags: ["IoT", "Logistics", "SCM"],
     },
     {
@@ -69,8 +69,8 @@ const INDUSTRIES = [
         icon: Plane,
         title: "Travel & Hospitality",
         description: "Streamlining guest journeys with high-performance booking engines and automated revenue management systems.",
-        color: "text-blue-400",
-        bg: "bg-blue-500/10",
+        color: "text-indigo-500",
+        bg: "bg-indigo-500/10",
         image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
         tags: ["Booking", "Revenue", "Platform"],
     },
@@ -84,9 +84,16 @@ function Card({ industry, index }: { industry: typeof INDUSTRIES[0]; index: numb
     });
 
     // Entrance animation: matures much earlier (halfway through the approach)
-    const scale = useTransform(scrollYProgress, [0, 0.5], [0.95, 1]);
-    const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
-    const blur = useTransform(scrollYProgress, [0, 0.5], [10, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.4], [0.95, 1]);
+    const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
+    const blur = useTransform(scrollYProgress, [0, 0.4], [10, 0]);
+    
+    // Fast & Smooth Side-Reveal: alternating between left and right
+    const xOffset = useTransform(
+        scrollYProgress, 
+        [0, 0.5], 
+        [index % 2 === 0 ? -150 : 150, 0]
+    );
 
     // Each card sticks at a slightly lower position, creating the stacked deck effect
     const stickyTop = 80 + index * 20;
@@ -98,13 +105,14 @@ function Card({ industry, index }: { industry: typeof INDUSTRIES[0]; index: numb
             style={{
                 top: `${stickyTop}px`,
                 zIndex: 10 + index,
-                paddingBottom: index === INDUSTRIES.length - 1 ? "10vh" : "15vh",
+                paddingBottom: index === INDUSTRIES.length - 1 ? "5vh" : "6vh",
             }}
         >
             <motion.div
                 style={{
                     scale,
                     opacity,
+                    x: xOffset,
                     filter: useTransform(blur, (v: number) => `blur(${v}px)`),
                 }}
                 className={`relative w-full max-w-6xl mx-auto bg-card border border-border/80 rounded-[2rem] md:rounded-[3rem] overflow-hidden flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} shadow-2xl shadow-indigo-500/10 group transform-gpu`}
