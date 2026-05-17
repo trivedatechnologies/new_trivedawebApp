@@ -18,10 +18,10 @@ export const AboutEdge = () => {
                         >
                             <Rocket size={14} /> Our Edge
                         </motion.div>
-                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 md:mb-8 tracking-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 md:mb-8 tracking-tight">
                             Backed by leadership with <span className="text-indigo-500">20+ years</span> of experience
                         </h2>
-                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
+                        <p className="text-base md:text-xl text-muted-foreground leading-relaxed mb-10">
                             Our team brings together decades of hands-on experience working across complex systems, large-scale platforms, and high-growth environments.
                         </p>
 

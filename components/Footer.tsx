@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { LayoutGrid, ArrowUpRight } from "lucide-react";
-
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -29,11 +29,25 @@ export default function Footer() {
                 <div className="flex flex-col gap-12 lg:flex-row lg:justify-between lg:gap-20">
                     {/* Brand */}
                     <div className="max-w-sm">
-                        <div className="mb-6 flex items-center gap-2.5">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-indigo-500 to-blue-600 text-white shadow-lg shadow-indigo-500/20">
-                                <LayoutGrid size={20} />
-                            </div>
-                            <span className="text-xl font-black tracking-tight text-foreground">Triveda</span>
+                        <div className="mb-6">
+                            <Link href="/" className="flex items-center gap-2 group">
+                                <div className="relative h-12 w-12  overflow-hidden rounded-xl p-2 transition-colors">
+                                    <Image
+                                        src="/favicon.png"
+                                        alt="Triveda"
+                                        fill
+                                        className="object-contain p-1"
+                                    />
+                                </div>
+                                <div className="flex flex-col leading-none">
+                                    <span className="text-xl font-black tracking-tighter text-foreground">
+                                        TRIVEDA
+                                    </span>
+                                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-500/80">
+                                        Technologies
+                                    </span>
+                                </div>
+                            </Link>
                         </div>
                         <p className="text-sm leading-relaxed text-muted-foreground mb-6">
                             Engineering intelligent digital ecosystems for forward-thinking

@@ -2,10 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { LayoutGrid, Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useAccentTheme, ACCENT_THEMES } from "./AccentThemeProvider";
+import { useAccentTheme } from "./AccentThemeProvider";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
 const NAV_ITEMS = [
@@ -70,11 +71,24 @@ export default function Navbar() {
                     }`}
             >
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform active:scale-95">
-
-                    <span className="text-sm sm:text-lg md:text-xl font-bold tracking-tight text-foreground whitespace-nowrap">
-                        Triveda Technologies
-                    </span>
+                <Link href="/" className="flex items-center gap-2 group hover:scale-[1.02] transition-transform active:scale-95">
+                    <div className="relative h-14 w-30  overflow-hidden">
+                        <Image
+                            src="/logo.png"
+                            alt="Triveda"
+                            fill
+                            className="object-contain p-1"
+                            priority
+                        />
+                    </div>
+                    {/* <div className="flex flex-col leading-none">
+                        <span className="text-lg font-black tracking-tighter text-foreground">
+                            TRIVEDA
+                        </span>
+                        <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-indigo-500/80">
+                            Technologies
+                        </span>
+                    </div> */}
                 </Link>
 
                 {/* Desktop Nav */}
@@ -129,6 +143,32 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -10 }}
                         className="mx-auto mt-2 max-w-6xl overflow-hidden rounded-2xl border border-border bg-background/95 p-4 backdrop-blur-2xl lg:hidden shadow-2xl"
                     >
+                        <div className="mb-6 flex items-center justify-between px-2">
+                            <Link href="/" className="flex items-center gap-2">
+                                <div className="relative h-10 w-10 overflow-hidden rounded-xl bg-black/5 p-1.5">
+                                    <Image
+                                        src="/favicon.png"
+                                        alt="Triveda"
+                                        fill
+                                        className="object-contain p-1"
+                                    />
+                                </div>
+                                <div className="flex flex-col leading-none text-left">
+                                    <span className="text-lg font-black tracking-tighter text-foreground">
+                                        TRIVEDA
+                                    </span>
+                                    <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-indigo-500/80">
+                                        Technologies
+                                    </span>
+                                </div>
+                            </Link>
+                            <button
+                                onClick={() => setMobileOpen(false)}
+                                className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-background/50 text-foreground"
+                            >
+                                <X size={18} />
+                            </button>
+                        </div>
                         <div className="grid grid-cols-1 gap-1">
                             {NAV_ITEMS.map((item) => (
                                 <button

@@ -11,7 +11,7 @@ export const MissionVisionSection = () => {
     return (
         <section className="px-4 py-24 md:py-36 bg-indigo-500/5 relative overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
                     <VisionCard 
                         icon={Target}
                         title="Our Mission"
@@ -40,17 +40,19 @@ interface VisionCardProps {
 }
 
 const VisionCard = ({ icon: Icon, title, desc, colorClass, showIconBg }: VisionCardProps) => (
-    <div className="p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] bg-background border border-border shadow-xl relative overflow-hidden group hover:shadow-2xl transition-all">
+    <div className="h-full p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] bg-card/40 backdrop-blur-md border border-border/60 relative overflow-hidden group transition-all hover:border-indigo-500/20">
         {showIconBg && (
-            <div className="absolute top-0 right-0 p-8 opacity-[0.03]">
-                <Icon size={150} />
+            <div className={`absolute -top-10 -right-10 p-8 opacity-[0.05] transition-transform duration-700 group-hover:scale-110 group-hover:rotate-12 ${colorClass}`}>
+                <Icon size={240} />
             </div>
         )}
-        <Icon className={`${colorClass} mb-6 mx-auto md:mx-0 transition-transform group-hover:scale-110`} size={48} />
-        <h3 className={`text-[10px] md:text-xs font-mono tracking-[0.3em] ${colorClass} mb-4 uppercase`}>
+        <div className={`w-14 h-14 rounded-2xl bg-background border border-border flex items-center justify-center mb-8 shadow-sm ${colorClass}`}>
+            <Icon size={28} />
+        </div>
+        <h3 className={`text-[10px] font-black tracking-[0.4em] ${colorClass} mb-4 uppercase opacity-80`}>
             {title}
         </h3>
-        <p className="text-xl md:text-3xl font-bold leading-tight">
+        <p className="text-xl md:text-2xl font-bold leading-tight tracking-tight text-foreground/90">
             {desc}
         </p>
     </div>

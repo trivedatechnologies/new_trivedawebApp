@@ -15,10 +15,10 @@ export const PhilosophySection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
                     {/* Core Philosophy */}
                     <div>
-                        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-12 tracking-tight flex items-center gap-4">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading mb-12 tracking-tight flex items-center gap-4">
                             <BrainCircuit className="text-indigo-500" /> Our Philosophy
                         </h2>
-                        <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+                        <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
                             We don’t just build technology — we build solutions that drive business outcomes. At Triveda Technologies, every project is approached with:
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -33,7 +33,7 @@ export const PhilosophySection = () => {
 
                     {/* Who We Work With */}
                     <div>
-                        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-12 tracking-tight">Who We Work With</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading mb-12 tracking-tight">Who We Work With</h2>
                         <div className="space-y-6">
                             {WHO_WE_WORK_WITH.map((item, i) => (
                                 <ClientCategoryCard key={i} item={item} />

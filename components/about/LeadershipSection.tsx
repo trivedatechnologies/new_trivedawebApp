@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Sparkles } from "lucide-react";
 import { LEADERSHIP_EXPERIENCE } from "@/constants/aboutData";
 
 /**
@@ -48,8 +48,10 @@ const LeadershipListItem = ({ item, index }: { item: string, index: number }) =>
 
 const AgilityCard = () => (
     <div className="bg-indigo-500/5 rounded-3xl p-8 md:p-12 border border-indigo-500/10 h-full flex flex-col justify-center">
-        <span className="text-5xl md:text-7xl mb-8">👉</span>
-        <p className="text-xl md:text-2xl lg:text-4xl font-bold leading-tight">
+        <div className="h-14 w-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-500 mb-8">
+            <Sparkles size={32} />
+        </div>
+        <p className="text-lg md:text-2xl lg:text-4xl font-bold leading-tight">
             This depth of experience allows us to bring <span className="text-indigo-500">enterprise thinking</span> with <span className="text-cyan-500">startup agility</span>.
         </p>
     </div>

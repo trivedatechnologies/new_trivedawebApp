@@ -36,7 +36,7 @@ export const CaseStudyHero = () => {
                     Our Success Stories
                 </motion.div>
                 
-                <h1 className="text-5xl md:text-8xl lg:text-9xl font-black font-heading tracking-tighter leading-[0.9] mb-10">
+                <h1 className="text-3xl sm:text-4xl md:text-8xl lg:text-9xl font-black font-heading tracking-tighter leading-[0.9] mb-10">
                     <TextReveal text="Delivering Measurable" /> <br className="hidden md:block" />
                     <TextReveal text="Business Impact" gradient />
                 </h1>
@@ -47,7 +47,7 @@ export const CaseStudyHero = () => {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="relative inline-block"
                 >
-                    <p className="max-w-2xl mx-auto text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
+                    <p className="max-w-2xl mx-auto text-lg md:text-2xl text-muted-foreground leading-relaxed font-light">
                         Real stories of how we've helped businesses design, build, and scale world-class technology solutions.
                     </p>
                     <div className="mt-8 flex items-center justify-center gap-4 text-xs font-mono uppercase tracking-widest text-indigo-400/60">

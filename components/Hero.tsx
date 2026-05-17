@@ -20,7 +20,7 @@ function PulsingCore({ colors }: { colors: { color400: string; color500: string;
         if (meshRef.current) {
             meshRef.current.rotation.x = t * 0.15;
             meshRef.current.rotation.y = t * 0.2;
-            
+
             // Subtle floating animation instead of mouse tracking
             meshRef.current.position.y = Math.sin(t * 0.5) * 0.2;
             meshRef.current.position.x = Math.cos(t * 0.3) * 0.1;
@@ -100,12 +100,12 @@ export default function Hero() {
                     <PulsingCore colors={currentTheme} />
                 </Canvas>
             </div>
- 
+
             {/* Content */}
             <main className="relative z-10 min-h-[85vh] md:min-h-screen w-full flex items-center justify-center p-6 md:p-12 font-sans text-foreground">
                 <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6">
                     {/* Hero Text Section */}
-                    <div className="md:col-span-7 flex flex-col justify-center space-y-4 md:space-y-6 pt-24 md:pt-20">
+                    <div className="md:col-span-7 flex flex-col justify-center space-y-3 md:space-y-4 pt-20 md:pt-0">
                         {/* Badge */}
 
 
@@ -114,7 +114,7 @@ export default function Hero() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
-                            className="text-4xl sm:text-6xl md:text-7xl font-black font-heading tracking-tighter leading-tight md:leading-none overflow-visible"
+                            className="text-4xl sm:text-6xl md:text-6xl font-black font-heading tracking-tighter leading-tight md:leading-none overflow-visible"
                         >
                             <motion.span
                                 className="inline-block text-foreground cursor-default py-0.5"
@@ -129,9 +129,9 @@ export default function Hero() {
                             </motion.span>
                             <br />
                             <motion.span
-                                className="inline-block bg-linear-to-r from-indigo-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent text-5xl sm:text-7xl md:text-8xl cursor-default py-1.5 font-black leading-[1.1]"
+                                className="inline-block bg-linear-to-r from-indigo-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent text-5xl sm:text-7xl md:text-7xl cursor-default py-2 font-black leading-[1.1]"
                             >
-                                Solutions for Modern Businesses
+                                Solutions for <br /> Modern Businesses
                             </motion.span>
                         </motion.h1>
 

@@ -21,20 +21,20 @@ export const CaseStudyItem = ({ study, index }: { study: any; index: number }) =
                 >
                     <div className="max-w-2xl">
                         <Tag study={study} />
-                        <h2 className="text-4xl md:text-6xl font-black font-heading tracking-tighter mt-6 leading-none italic uppercase">
+                        <h2 className="text-3xl md:text-6xl font-black font-heading tracking-tighter mt-6 leading-none italic uppercase">
                             {study.title.split(' ').slice(0, 4).join(' ')}
                             <br />
                             <span className="text-indigo-500">{study.title.split(' ').slice(4).join(' ')}</span>
                         </h2>
                     </div>
                     <div className="flex flex-col items-end">
-                        <span className="text-7xl md:text-9xl font-black font-heading tracking-tighter text-foreground/10 select-none -mb-6 md:-mb-10">
+                        <span className="text-6xl md:text-9xl font-black font-heading tracking-tighter text-foreground/10 select-none -mb-6 md:-mb-10">
                             IMPACT
                         </span>
                         <div className="relative z-10 flex items-center gap-4 bg-indigo-600 px-8 py-6 rounded-[2rem] shadow-2xl shadow-indigo-500/40">
                              <TrendingUp className="text-white w-10 h-10" />
                              <div>
-                                <p className="text-3xl md:text-4xl font-black text-white leading-none">
+                                <p className="text-2xl md:text-4xl font-black text-white leading-none">
                                     {study.results[0].value}
                                 </p>
                                 <p className="text-[10px] font-black uppercase tracking-widest text-indigo-100">
@@ -56,7 +56,7 @@ export const CaseStudyItem = ({ study, index }: { study: any; index: number }) =
                                     <Layers size={14} className="text-indigo-500" />
                                     The Challenge
                                 </h4>
-                                <p className="text-xl text-foreground font-serif italic leading-relaxed opacity-80 mb-8 underline decoration-indigo-500/30 underline-offset-8">
+                                <p className="text-lg md:text-xl text-foreground font-serif italic leading-relaxed opacity-80 mb-8 underline decoration-indigo-500/30 underline-offset-8">
                                     "{study.context}"
                                 </p>
                                 <div className="space-y-4">
@@ -93,8 +93,8 @@ export const CaseStudyItem = ({ study, index }: { study: any; index: number }) =
                                         <div className="absolute -left-[61px] top-0 h-10 w-10 rounded-full bg-background border-4 border-indigo-500/20 flex items-center justify-center text-[11px] font-black text-indigo-400 z-10">
                                             {i + 1}
                                         </div>
-                                        <h4 className="text-2xl font-bold text-foreground mb-3">{step.title}</h4>
-                                        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">{step.desc}</p>
+                                        <h4 className="text-xl md:text-2xl font-bold text-foreground mb-3">{step.title}</h4>
+                                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl">{step.desc}</p>
                                     </motion.div>
                                 ))}
                             </div>
@@ -110,7 +110,7 @@ export const CaseStudyItem = ({ study, index }: { study: any; index: number }) =
                                         </div>
                                         <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">0{i+1} Result</span>
                                     </div>
-                                    <h4 className="text-4xl font-black text-foreground mb-1 tracking-tighter">{result.value}</h4>
+                                    <h4 className="text-2xl md:text-4xl font-black text-foreground mb-1 tracking-tighter">{result.value}</h4>
                                     <p className="text-xs font-bold text-muted-foreground uppercase tracking-[0.22em]">{result.label}</p>
                                 </GlowCard>
                             ))}
@@ -123,7 +123,7 @@ export const CaseStudyItem = ({ study, index }: { study: any; index: number }) =
                                 <Target size={14} />
                                 Strategic Takeaway
                             </h4>
-                            <p className="text-2xl md:text-3xl font-bold font-serif leading-tight">
+                            <p className="text-lg md:text-3xl font-bold font-serif leading-tight">
                                 "{study.takeaway}"
                             </p>
                             <ArrowDown size={30} className="mx-auto mt-8 text-indigo-500 animate-bounce" />
