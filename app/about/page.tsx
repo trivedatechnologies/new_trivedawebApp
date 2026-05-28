@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import DigitalEcosystem from "@/components/DigitalEcosystem";
 import { SectionDivider } from "@/components/ScrollEffects";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 // Modular Sub-components
 import { AboutHero } from "@/components/about/AboutHero";
@@ -40,6 +41,12 @@ export default function AboutPage() {
         <div className="min-h-screen bg-background text-foreground transition-colors duration-300 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden">
             {/* Global background effects */}
             <DigitalEcosystem />
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "https://trivedatechnologies.com" },
+                    { name: "About Us", url: "https://trivedatechnologies.com/about" },
+                ]}
+            />
             
             <SmoothScroll>
                 <Navbar />

@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import DigitalEcosystem from "@/components/DigitalEcosystem";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/JsonLd";
 
 // Animation & Effects
 import { 
@@ -43,6 +44,7 @@ interface ServicePageProps {
  * - Dynamic data injection.
  */
 export default function ServicePageTemplate({
+    id,
     tag,
     title,
     description,
@@ -54,9 +56,22 @@ export default function ServicePageTemplate({
         window.location.href = '/#contact';
     };
 
+    const serviceUrl = `https://trivedatechnologies.com/services/${id}`;
+
     return (
         <div className="min-h-screen bg-background text-foreground transition-colors duration-300 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden">
             <DigitalEcosystem />
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "https://trivedatechnologies.com" },
+                    { name: tag, url: serviceUrl },
+                ]}
+            />
+            <ServiceSchema
+                name={`${tag} Solutions`}
+                description={description}
+                url={serviceUrl}
+            />
             
             <SmoothScroll>
                 <Navbar />

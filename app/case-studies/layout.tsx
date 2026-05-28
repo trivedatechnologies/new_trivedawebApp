@@ -15,6 +15,21 @@ export const metadata: Metadata = {
             "Real stories of how we've helped businesses design, build, and scale world-class technology solutions.",
         url: "https://trivedatechnologies.com/case-studies",
         type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Triveda Technologies Case Studies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Case Studies — Real Success Stories & Business Impact | Triveda Technologies",
+        description:
+            "Explore how Triveda Technologies has delivered measurable business impact through custom software, AI solutions, and digital transformation.",
+        images: ["/og-image.png"],
     },
 };
 

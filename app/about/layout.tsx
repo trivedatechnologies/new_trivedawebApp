@@ -15,6 +15,21 @@ export const metadata: Metadata = {
             "20+ years of leadership experience delivering scalable digital, AI, and growth solutions to businesses worldwide.",
         url: "https://trivedatechnologies.com/about",
         type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "About Triveda Technologies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Us — Leadership, Philosophy & Mission | Triveda Technologies",
+        description:
+            "Learn about Triveda Technologies — 20+ years of leadership experience in digital transformation, AI solutions, and scalable software development.",
+        images: ["/og-image.png"],
     },
 };
 

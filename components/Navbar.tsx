@@ -75,7 +75,7 @@ export default function Navbar() {
                     <div className="relative h-14 w-30  overflow-hidden">
                         <Image
                             src="/logo.png"
-                            alt="Triveda"
+                            alt="Triveda Technologies - Digital & AI Solutions"
                             fill
                             className="object-contain p-1"
                             priority
@@ -148,7 +148,7 @@ export default function Navbar() {
                                 <div className="relative h-10 w-10 overflow-hidden rounded-xl bg-black/5 p-1.5">
                                     <Image
                                         src="/favicon.png"
-                                        alt="Triveda"
+                                        alt="Triveda Technologies Logo Icon"
                                         fill
                                         className="object-contain p-1"
                                     />

@@ -54,6 +54,9 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://trivedatechnologies.com",
     },
+    verification: {
+        google: "xZm71udnqipiKV2W1JBkthSL6LnAVB3PJvNM7hJjeKw",
+    },
     openGraph: {
         type: "website",
         locale: "en_IN",
@@ -64,10 +67,16 @@ export const metadata: Metadata = {
             "Premium technology consulting and digital transformation partner delivering AI-driven, scalable, and enterprise-ready solutions.",
         images: [
             {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Triveda Technologies — Engineering Intelligent Digital Ecosystems",
+            },
+            {
                 url: "/logo.png",
                 width: 415,
                 height: 216,
-                alt: "Triveda Technologies",
+                alt: "Triveda Technologies Logo",
             },
         ],
     },
@@ -76,7 +85,7 @@ export const metadata: Metadata = {
         title: "Triveda Technologies — Engineering Intelligent Digital Ecosystems",
         description:
             "Premium technology consulting and digital transformation partner delivering AI-driven, scalable, and enterprise-ready solutions.",
-        images: ["/logo.png"],
+        images: ["/og-image.png"],
     },
     icons: {
         icon: [

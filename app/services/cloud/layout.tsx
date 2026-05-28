@@ -15,6 +15,21 @@ export const metadata: Metadata = {
             "Migrate, manage, and optimize your cloud infrastructure with high availability and security.",
         url: "https://trivedatechnologies.com/services/cloud",
         type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Cloud Services — Triveda Technologies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Cloud Services — Migration, DevOps & Infrastructure | Triveda Technologies",
+        description:
+            "Scalable, secure, and high-performance cloud infrastructure by Triveda Technologies. Cloud migration, architecture design, DevOps, CI/CD, and monitoring services.",
+        images: ["/og-image.png"],
     },
 };
 

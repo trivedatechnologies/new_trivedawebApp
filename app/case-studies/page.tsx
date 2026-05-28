@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import DigitalEcosystem from "@/components/DigitalEcosystem";
 import { SectionDivider } from "@/components/ScrollEffects";
+import { BreadcrumbSchema } from "@/components/JsonLd";
 
 // Shared Section Implementation
 import { CASE_STUDIES } from "@/constants/caseStudiesData";
@@ -33,6 +34,12 @@ export default function CaseStudiesPage() {
     return (
         <div className="min-h-screen bg-background text-foreground transition-colors duration-300 selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden">
             <DigitalEcosystem />
+            <BreadcrumbSchema
+                items={[
+                    { name: "Home", url: "https://trivedatechnologies.com" },
+                    { name: "Case Studies", url: "https://trivedatechnologies.com/case-studies" },
+                ]}
+            />
             
             <SmoothScroll>
                 <Navbar />

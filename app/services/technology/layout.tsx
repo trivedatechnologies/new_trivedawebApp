@@ -15,6 +15,21 @@ export const metadata: Metadata = {
             "High-performance systems tailored to complex business needs with scalability and security.",
         url: "https://trivedatechnologies.com/services/technology",
         type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Technology Solutions — Triveda Technologies",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Technology Solutions — Custom Software & Enterprise Development | Triveda Technologies",
+        description:
+            "Robust, scalable, and enterprise-grade technology solutions by Triveda Technologies. Custom software, web & mobile apps, API integrations, and legacy modernization.",
+        images: ["/og-image.png"],
     },
 };
 

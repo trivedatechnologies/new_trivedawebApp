@@ -116,7 +116,7 @@ export default function AboutImageTrail() {
                     ref={(el) => { itemsRef.current[index] = el; }}
                     className="absolute top-0 left-0 opacity-0 w-[150px] md:w-[250px] aspect-4/5 object-cover block shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] rounded-2xl pointer-events-none"
                     src={url}
-                    alt=""
+                    alt={`Triveda Technologies Team Member ${index + 1}`}
                 />
             ))}
 

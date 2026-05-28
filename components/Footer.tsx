@@ -34,7 +34,7 @@ export default function Footer() {
                                 <div className="relative h-12 w-12  overflow-hidden rounded-xl p-2 transition-colors">
                                     <Image
                                         src="/favicon.png"
-                                        alt="Triveda"
+                                        alt="Triveda Technologies Logo Icon"
                                         fill
                                         className="object-contain p-1"
                                     />

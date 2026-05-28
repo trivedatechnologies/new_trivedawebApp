@@ -152,7 +152,7 @@ function Card({ industry, index }: { industry: typeof INDUSTRIES[0]; index: numb
                 <div className="flex-1 relative min-h-[250px] md:min-h-[400px] overflow-hidden">
                     <img
                         src={industry.image}
-                        alt={industry.title}
+                        alt={`Triveda Technologies - ${industry.title} Industry Solutions`}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className={`absolute inset-0 bg-linear-to-r ${index % 2 === 1 ? "from-transparent via-card/5 to-card" : "from-card via-card/5 to-transparent"}`} />
