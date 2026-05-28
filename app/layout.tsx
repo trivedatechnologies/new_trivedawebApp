@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { AccentThemeProvider } from "@/components/AccentThemeProvider";
 import { GlobalErrorHandler } from "@/components/GlobalErrorHandler";
 import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/JsonLd";
+import Script from "next/script";
 
 
 const inter = Inter({
@@ -114,6 +115,21 @@ export default function RootLayout({
                 <OrganizationSchema />
                 <WebsiteSchema />
                 <LocalBusinessSchema />
+                
+                <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-H6XH5C1CNB" />
+                <Script
+                    id="google-analytics"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-H6XH5C1CNB');
+                        `,
+                    }}
+                />
+
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
