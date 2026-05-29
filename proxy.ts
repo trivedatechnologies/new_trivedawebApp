@@ -3,11 +3,9 @@ import type { NextRequest } from "next/server";
 
 export function proxy(request: NextRequest) {
     const host = request.headers.get("host") || "";
-    
-    // Check if the request is for the Vercel production subdomains
-    // We redirect both known Vercel subdomains to the custom domain
-    const isVercelDomain = 
-        host.includes("new-triveda-technologies.vercel.app") || 
+
+    const isVercelDomain =
+        host.includes("new-triveda-technologies.vercel.app") ||
         host.includes("triveda-techno.vercel.app") ||
         host.includes("triveda-technologies.vercel.app");
 
