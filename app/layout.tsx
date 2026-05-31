@@ -68,13 +68,13 @@ export const metadata: Metadata = {
             "Premium technology consulting and digital transformation partner delivering AI-driven, scalable, and enterprise-ready solutions.",
         images: [
             {
-                url: "/og-image.png",
+                url: "/og-image.png?v=1.1",
                 width: 1200,
                 height: 630,
                 alt: "Triveda Technologies — Engineering Intelligent Digital Ecosystems",
             },
             {
-                url: "/logo.png",
+                url: "/logo.png?v=1.1",
                 width: 415,
                 height: 216,
                 alt: "Triveda Technologies Logo",
@@ -86,22 +86,25 @@ export const metadata: Metadata = {
         title: "Triveda Technologies — Engineering Intelligent Digital Ecosystems",
         description:
             "Premium technology consulting and digital transformation partner delivering AI-driven, scalable, and enterprise-ready solutions.",
-        images: ["/og-image.png"],
+        images: ["/og-image.png?v=1.1"],
     },
     icons: {
         icon: [
-            { url: "/favicon.png", type: "image/png" },
+            { url: "/favicon.png?v=1.1", type: "image/png" },
         ],
-        shortcut: "/favicon.png",
-        apple: "/favicon.png",
+        shortcut: "/favicon.png?v=1.1",
+        apple: "/favicon.png?v=1.1",
         other: [
             {
                 rel: "apple-touch-icon-precomposed",
-                url: "/favicon.png",
+                url: "/favicon.png?v=1.1",
             },
         ],
     },
     category: "technology",
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function RootLayout({

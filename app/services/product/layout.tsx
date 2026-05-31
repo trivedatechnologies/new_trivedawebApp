@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Transform your ideas into scalable digital products. Triveda Technologies offers end-to-end product development — strategy, UI/UX design, MVP, full-stack development, and optimization.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function ProductLayout({ children }: { children: React.ReactNode }) {

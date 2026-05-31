@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Explore how Triveda Technologies has delivered measurable business impact through custom software, AI solutions, and digital transformation.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function CaseStudiesLayout({

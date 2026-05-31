@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Robust, scalable, and enterprise-grade technology solutions by Triveda Technologies. Custom software, web & mobile apps, API integrations, and legacy modernization.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function TechnologyLayout({ children }: { children: React.ReactNode }) {

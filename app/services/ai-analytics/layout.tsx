@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Unlock the power of data and AI with Triveda Technologies. Machine learning, predictive analytics, business intelligence, AI automation, and conversational AI solutions.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function AIAnalyticsLayout({ children }: { children: React.ReactNode }) {

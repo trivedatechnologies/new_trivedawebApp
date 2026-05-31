@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Data-driven digital marketing by Triveda Technologies. Performance marketing, SEO, social media, marketing automation, CRO, and growth analytics for measurable business outcomes.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function MarketingLayout({ children }: { children: React.ReactNode }) {

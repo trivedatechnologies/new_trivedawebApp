@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Learn about Triveda Technologies — 20+ years of leadership experience in digital transformation, AI solutions, and scalable software development.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function AboutLayout({

@@ -31,6 +31,9 @@ export const metadata: Metadata = {
             "Scalable, secure, and high-performance cloud infrastructure by Triveda Technologies. Cloud migration, architecture design, DevOps, CI/CD, and monitoring services.",
         images: ["/og-image.png"],
     },
+    other: {
+        "release-date": "2026-05-31",
+    },
 };
 
 export default function CloudLayout({ children }: { children: React.ReactNode }) {
