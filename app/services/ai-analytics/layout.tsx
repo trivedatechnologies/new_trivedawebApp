@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Unlock the power of data and AI with Triveda Technologies. Machine learning, predictive analytics, business intelligence, AI automation, and conversational AI solutions.",
     keywords:
-        "AI solutions, machine learning, predictive analytics, business intelligence, data engineering, AI automation, chatbot development, Triveda Technologies",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda AI, AI solutions, machine learning, predictive analytics, business intelligence, data engineering, AI automation, chatbot development",
     alternates: {
         canonical: "https://trivedatechnologies.com/services/ai-analytics",
     },

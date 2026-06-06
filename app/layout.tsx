@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description:
         "Premium technology consulting and digital transformation partner delivering AI-driven, scalable, and enterprise-ready solutions. Custom software, cloud systems, and strategic consulting.",
     keywords:
-        "technology consulting, digital transformation, AI solutions, software development, cloud migration, Triveda Technologies, enterprise software, machine learning, custom software development, IT consulting India, Gurugram tech company",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Software, Triveda Consulting, Triveda Tech India, technology consulting, digital transformation, AI solutions, software development, cloud migration, enterprise software, machine learning, custom software development, IT consulting India, Gurugram tech company, software development company, AI consulting services, digital marketing agency, cloud migration company, MVP development, IT services company",
     authors: [{ name: "Triveda Technologies", url: "https://trivedatechnologies.com" }],
     creator: "Triveda Technologies",
     publisher: "Triveda Technologies",

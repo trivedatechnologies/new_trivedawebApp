@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Robust, scalable, and enterprise-grade technology solutions by Triveda Technologies. Custom software, web & mobile apps, API integrations, and legacy modernization.",
     keywords:
-        "custom software development, web application development, mobile app development, API integration, enterprise software, legacy modernization, Triveda Technologies",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Software, custom software development, web application development, mobile app development, API integration, enterprise software, legacy modernization",
     alternates: {
         canonical: "https://trivedatechnologies.com/services/technology",
     },

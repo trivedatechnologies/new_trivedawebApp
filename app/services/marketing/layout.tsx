@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Data-driven digital marketing by Triveda Technologies. Performance marketing, SEO, social media, marketing automation, CRO, and growth analytics for measurable business outcomes.",
     keywords:
-        "digital marketing, performance marketing, SEO services, social media marketing, marketing automation, conversion rate optimization, growth analytics, Triveda Technologies",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Marketing, digital marketing, performance marketing, SEO services, social media marketing, marketing automation, conversion rate optimization, growth analytics",
     alternates: {
         canonical: "https://trivedatechnologies.com/services/marketing",
     },

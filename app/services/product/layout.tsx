@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Transform your ideas into scalable digital products. Triveda Technologies offers end-to-end product development — strategy, UI/UX design, MVP, full-stack development, and optimization.",
     keywords:
-        "product development, MVP development, digital product, UI UX design, full stack development, product scaling, Triveda Technologies",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Products, product development, MVP development, digital product, UI UX design, full stack development, product scaling",
     alternates: {
         canonical: "https://trivedatechnologies.com/services/product",
     },

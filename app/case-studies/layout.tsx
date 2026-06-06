@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Explore how Triveda Technologies has delivered measurable business impact through custom software, AI solutions, and digital transformation. Real client success stories.",
     keywords:
-        "case studies, success stories, digital transformation results, AI implementation, software development portfolio, Triveda Technologies projects",
+        "Triveda, Triveda Tech, Triveda Technologies, case studies, success stories, digital transformation results, AI implementation, software development portfolio, Triveda Technologies projects, Triveda portfolio",
     alternates: {
         canonical: "https://trivedatechnologies.com/case-studies",
     },

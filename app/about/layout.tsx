@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Learn about Triveda Technologies — 20+ years of leadership experience in digital transformation, AI solutions, and scalable software development. Trusted by businesses worldwide.",
     keywords:
-        "about Triveda Technologies, technology leadership, IT company Gurugram, digital transformation company India, enterprise software team",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Software, about Triveda Technologies, technology leadership, IT company Gurugram, digital transformation company India, enterprise software team",
     alternates: {
         canonical: "https://trivedatechnologies.com/about",
     },

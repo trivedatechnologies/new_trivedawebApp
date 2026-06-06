@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description:
         "Scalable, secure, and high-performance cloud infrastructure by Triveda Technologies. Cloud migration, architecture design, DevOps, CI/CD, and monitoring services.",
     keywords:
-        "cloud services, cloud migration, DevOps, CI/CD, cloud architecture, infrastructure optimization, AWS, Azure, GCP, Triveda Technologies",
+        "Triveda, Triveda Tech, Triveda Technologies, Triveda Cloud, cloud services, cloud migration, DevOps, CI/CD, cloud architecture, infrastructure optimization, AWS, Azure, GCP",
     alternates: {
         canonical: "https://trivedatechnologies.com/services/cloud",
     },
